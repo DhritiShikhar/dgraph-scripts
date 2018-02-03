@@ -3,7 +3,6 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"flag"
 	"fmt"
 	"log"
 
@@ -38,7 +37,6 @@ func newClient() *client.Dgraph {
 }
 
 func main() {
-	flag.Parse()
 	d := newClient()
 
 	// Alter
